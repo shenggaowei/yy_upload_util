@@ -1,0 +1,18 @@
+{
+  "name": "yy_upload_util",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "upload": "node index.js"
+  },
+  "author": "weishenggao",
+  "bin": {
+    "yy_upload": "index.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "scp2": "^0.5.0"
+  }
+}
