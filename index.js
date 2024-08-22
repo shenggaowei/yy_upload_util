@@ -11,7 +11,7 @@ const sourceDir = path.join(process.cwd(), serverConfig.sourceDir);
 // 根据文件 mtime 获取最新文件
 const getLatestFilePath = (files) => {
   const filteredFiles = files.filter((file) => {
-    return file.endsWith(".exe") || file.endsWith(".dmg") || file.endsWith(".txt");
+    return file.endsWith(".exe") || file.endsWith(".dmg");
   });
   const sortedFiles = filteredFiles.sort((a, b) => {
     return fs.statSync(path.join(sourceDir, a)).mtime.getTime() - fs.statSync(path.join(sourceDir, b)).mtime.getTime();
